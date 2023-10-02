@@ -1,1 +1,13 @@
 /* BASIC STYLES HERE */
+.playerImg {
+  height: 10dvh;
+  width: 10dvh;
+  object-fit: cover;
+  border-radius: 5dvh;
+  border: 2px solid greenyellow;
+}
+
+.playerCard {
+  border: 2px dashed darkgray;
+  border-radius: 10dvh;
+}
