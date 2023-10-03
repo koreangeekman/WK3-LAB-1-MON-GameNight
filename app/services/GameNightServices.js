@@ -10,13 +10,18 @@ class GameNightServices {
   scoreMinus1(playerName) {
     const thisPlayer = AppState.GameNightPlayers.find(player => player.name == playerName);
     thisPlayer.score--;
-    console.log('subtracted');
   }
 
   scorePlus1(playerName) {
     const thisPlayer = AppState.GameNightPlayers.find(player => player.name == playerName);
     thisPlayer.score++;
-    console.log('added');
+  }
+
+  addNewPlayer(newPlayerData) {
+    const newPlayer = new GameNightPlayer(newPlayerData.playerName, newPlayerData.playerImgURL);
+    console.log(newPlayer)
+
+    AppState.GameNightPlayers.push(newPlayer);
   }
 
 }
